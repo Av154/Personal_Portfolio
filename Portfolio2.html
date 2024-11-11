@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header / Navigation Bar */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            
+        }
+
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+        header h1:hover{
+            color: #e5533d;
+            transition: color 0.5s;
+
+        }
+
+        nav {
+            display: flex;
+            
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Section */
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+            background-color: #09d6f5;
+            padding: 20px;
+        }
+
+        .main .content {
+            max-width: 800px;
+        }
+
+        .main h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .main p {
+            font-size: 1.2rem;
+            color: #656363;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e5533d;
+            color: rgba(0, 0, 0, 0.845);
+            text-shadow: #101010;
+            font-size: 1.25rem;
+            transition: font-size 0.5s;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 40px 0;
+            background-color: #e8d9d9;
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .skills li {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .skills li:hover {
+            background-color: #e5533d;
+            font-size: 1.15rem;
+            color: #101010;  
+            transition: font-size 1.02s;
+
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding:9px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .main h2 {
+                font-size: 2.5rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+            
+
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Abhishek Sharma</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi, I'm Abhishek Sharma, a passionate Web Developer. I create beautiful and functional websites.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h3>About Me</h3>
+            <p>Hello! I'm a web developer with a passion for building modern, responsive websites. I have experience working with HTML, CSS, JavaScript, and various web frameworks. I enjoy solving problems and creating user-friendly web experiences.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Management</li>
+                <li>Leadership</li>  
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container" style="background-color:rgb(9, 9, 9); color: aliceblue;">
+            <h3 style="color: #fff;">Contact</h3>
+            <p style="color: #fff;">If you'd like to work together or just want to chat, feel free to reach out! You can email me at <a href="abhishek9835003292@gmail.com" style="color: #ff6347;">abhishek9835003292@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abhishek Sharma. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
